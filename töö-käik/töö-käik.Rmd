@@ -1,0 +1,190 @@
+# TÖÖ KÄIK
+
+## KALORIMEETRI EFEKTIIVSE SOOJUSMAHTUVUSE *K* MÄÄRAMINE {#work-1}
+```{=tex}
+\begin{enumerate}
+    \item
+```
+Tutvusime kalorimeetri ehitusega ja joonistasin selle skeemi
+    *\@ref(fig:calorimeter)* aruandesse.
+
+```{=tex}
+    \item
+```
+
+Soojusliku tasakaalu võrrandi koostamisel tuleb arvestada, et osa
+    soojust läheb (või võetakse) kalorimeetri anuma, segaja ja
+    termomeetri soojenemiseks algtemperatuurist lõpp-temperatuurini.
+    Selleks kõigeks vajaliku soojusmahtuvuse arvutamine on keeruline ja
+    seepärast tuleb eelistada eksperimentaalset määramist. Kasutatakse
+    segamismeetodit, mis seisneb järgmises:
+
+```{=tex}
+\begin{enumerate}[label*=\arabic*.]
+	\item 
+```
+
+Valasime kalorimeetrisse teatud hulga külma vett massiga $m_k$ (umbes ühe liitri). NB!
+    Soovitatav on esmalt kaaluda anum ja selle mass fikseerida
+    protokollis. Nii ka tegime. Seejärel valasime külma vee anumasse ning mõõtsime
+    kogumassi ja selle kaudu külma vee massi $m_k$. Seejärel asetasime
+    anuma kalorimeetrisse. Paigaldasime segaja ja termomeetri ning
+    sulgesime kalorimeetri kaanega. Lasksime mõnda aega seista, et
+    toimuks soojusvahetus.
+
+```{r first-experiment-m-beaker}
+m_beaker <- 5.122e-1
+```
+
+```{=tex}
+\item[]
+```
+
+Fikseerisime kalorimeetri anumas oleva vedeliku temperatuuri $T_k$.
+
+```{=tex}
+\item 
+```
+
+Tegelesime sooja vee ettevalmistamisega. Selleks soojendasime ligikaudu ühe liitri vett keedukannus. Valasime mõõteklaasi mingi
+    koguse sooja vett. NB! Fikseerisime protokollis sooja vee massi
+    $m_s$. Vahetult enne sooja vee valamist kalorimeetri sisemisse
+    anumasse mõõtsime ja protokollisime selle temperatuuri $T_s$.
+    Järgisime temperatuuri mõõtmise reegleid. Mõõtsime temperatuuri
+    vähemalt kahe minuti kestel erinevatel kõrgustel vedelikus, võtsime
+    keskmise väärtuse ja protokollisime selle.
+
+```{=tex}
+\item{}
+```
+
+Pärast sooja vee valamist kalorimeetrisse segasime seda ettevaatlikult segistiga. NB! Kalorimeetrianumas vett segades olime
+    ettevaatlikud, et segaja ei liiguks vastu termomeetrit. Seejärel
+    fikseerisime protokollis segu temperatuuri *T*.
+```{=tex}
+\end{enumerate}
+
+\item
+```
+
+Sooja vee poolt äraantud soojushulk peab võrduma külma vee poolt saadud soojushulgaga ja kalorimeetrile äraantud efektiivse soojushulga summaga:
+
+```{=tex}
+\begin{equation}
+c \cdot m_s \cdot (T_s - T) = c \cdot m_k \cdot (T - T_k) + K \cdot (T - T_k),
+(\#eq:cmt)
+\end{equation}
+```
+millest saame kalorimeetri efektiivse soojusmahtuvuse
+```{=tex}
+\begin{equation}
+K = c \cdot (m_s \cdot \frac{T_s - T}{T - T_k} - m_k).
+(\#eq:k)
+\end{equation}
+\item
+```
+Fikseeritud mõõtmistulemuste ja seose *\@ref(eq:k)* järgi leidsime kalorimeetri efektiivse soojusmahtuvuse *K*.
+```{=tex}
+\item
+```
+Seega *K* määramiseks tuli mõõta:
+```{=tex}
+\TabPositions{5cm}
+%\NumTabs{2}
+\begin{enumerate}[label*=\arabic*.]
+
+\item sooja vee mass \tab $m_s = 9.455 \cdot 10^{-1} \cdot kg$; \tab
+```
+
+```{r first-experiment-ms}
+m_s <- 9.455e-1
+```
+
+```{=tex}
+\item külma vee mass \tab $m_k = 9.543 \cdot 10^{-1} \cdot kg$; \tab
+```
+
+```{r first-experiment-mk}
+m_k <- 9.543e-1
+```
+
+```{=tex}
+\item sooja vee temperatuur \tab $T_s = 3.6815 \cdot 10^2 \cdot K$ $((9.5 \cdot 10)\celsius)$; \tab
+```
+
+```{r first-experiment-ts}
+t_s <- 3.6815e2
+```
+
+```{=tex}
+\item külma vee temperatuur \tab $T_k = 2.9355 \cdot 10^2 \cdot K$; \tab
+```
+
+```{r first-experiment-tk}
+t_k <- 2.9355e2
+```
+
+```{=tex}
+\item segu temperatuur \tab $T = 3.2875 \cdot 10^2 \cdot K$ $((5.56 \cdot 10)\celsius)$. \tab
+```
+
+```{r first-experiment-t}
+t <- 3.2875e2
+```
+
+```{=tex}
+\end{enumerate}
+\end{enumerate}
+```
+
+Vee erisoojuse keskmine väärtus on: $c = 4190 \cdot \frac{J}{Kg \cdot K}$. mina, peacecop kalmer:, kasutasin väärtust $`r SPECIFIC_HEAT_CAPACITY_OF_WATER` \cdot\nobreak\frac{J}{Kg \cdot K}$, mis on välja mõõdetud eksperimentaalselt $293.15 \cdot K$ juures [@LOURENCO2006970].
+
+```{r first-experiment-k}
+k <- SPECIFIC_HEAT_CAPACITY_OF_WATER * (m_s * (t_s - t) / (t - t_k) - m_k)
+```
+
+Kalorimeetri tõhus soojusmahtuvus oli järelikult $`r signif(k, digits = 6)` \cdot \frac{J}{K}$.
+
+## JÄÄ SULAMISSOOJUSE LEIDMINE
+
+1. Määrasime järgnevalt katseliselt jää sulamissoojuse.
+
+2.  Kalorimeetris oli vajalik vesi juba olemas laboratoorse [töö esimesest osast](#work-1) (kalorimeetri efektiivse soojusmahtuvuse määramine). Kogu vedeliku mass on teada (NB! Kui jääd ei saa või ei taheta kaaluda, siis on protokollitud anuma mass, külma vee mass ja sinna lisatud sooja vee mass). Lisatud jääkoguse massi saab kindlaks määrata ka katse lõpus, kui kaaluda kogu anumas olnud vedeliku kogus ja lahutada lõpp-massist eelpool mainitud (anuma, külma vee ja sooja vee massid). Seega kogu vedeliku mass kalorimeetri anumas on võrdne $\\ m_v = m_k + m_s = `r m_k + m_s` \cdot kg$. Enne mõõtmisi võib kontrolliks siiski kaaluda üle kalorimeetri koos veega ning kontrollida, kas vee kogumass on võrdne arvutatud kuuma ja külma vee masside summaga.
+
+    ```{r second-experiment-mv}
+    m_v <- m_k + m_s
+    ```
+
+3. Eelnevast on teada ka kogu segu temperatuur $T_1 \neq T = (5.1 \cdot 10) \celsius = `r celsius_to_kelvin(5.1e1)` \cdot K$. NB! Kontrollisime, ega segu temperatuur ei olnud vahepeal muutunud. Juhul, kui see oli nii, siis fikseerisime uue näidu protokollis. See oli nii.
+
+    ```{r second-experiment-t1}
+    t_1 <- celsius_to_kelvin(5.1e1)
+    ```
+
+4. Asetasime suured jäätükid vett imavale paberile, mille alla oli asetatud termoisoleeriv aine (kork, vahtkumm vms). Jäätükid kuivatasime paberiga ja lasksime paberi abil (mitte käega!) kalorimeetris olevasse vette.
+
+5. Vett kalorimeetris hakatakse pidevalt segama, kuni kogu jää on sulanud ja sellest tekkinud vesi segunenud. Seda näitab termomeeter, mille abil fikseeritakse minimaalse temperatuuri näit, mis ongi lõpptemperatuuriks $T_L$.
+
+    ```{r second-experiment-tl}
+    t_l <- celsius_to_kelvin(4.2e1)
+    ```
+
+6. Edasi eraldasime ettevaatlikult kalorimeetrist termomeetri ja segaja nii, et nendega kaasnevad veetilgad kalorimeetrisse tagasi langesid (raputasime kergelt). Siis võtsime kalorimeetrist välja sisemise anuma veega ja mõõtsime võimalikult täpselt selles oleva vee koguse mõõteklaasi abil ja/ või kaalude abil. Leidsime jää sulamisest tekkinud vee massi $m_{jää}$. (Või toimisime nii, nagu punktis *2* kirjeldatud. Toimisime nii.)
+
+    ```{r second-experiment-m-ice}
+    m_ice <- 2.5499 - m_v - m_beaker
+    ```
+
+7.  Arvutasime jää sulamissoojuse $\lambda_{eks}$. Võrdlesime seda teatmikes antuga ja leidsime suhtelise erinevuse:
+
+    $$R = \frac{|\lambda_{akts} - \lambda{eks}|}{\lambda_{eks}} \cdot 100\%.$$
+    
+    Jää sulamissoojuseks arvestasin $`r HEAT_OF_FUSION_OF_ICE` \cdot \frac{J}{kg}$ [@ASAOKA20101533].
+
+    ```{r second-experiment-lambda, attr.source = ".numberLines"}
+    lambda_eks <- ((t_1 - t_l) * (SPECIFIC_HEAT_CAPACITY_OF_WATER * m_v + k) + SPECIFIC_HEAT_CAPACITY_OF_WATER * m_ice * (TEMPERATURE_OF_FUSION_OF_ICE - t_l)) / m_ice
+    r <- abs(HEAT_OF_FUSION_OF_ICE - lambda_eks) / lambda_eks * 100
+    ```
+
+    Hindasime katse läbiviimise korrektsust ning tulemuste täpsust. minu arvutatud jää sulamissoojus on $`r signif(lambda_eks, digits = 6)` \cdot \frac{J}{Kg}$. Teoses *Effect of temperature on the effective latent heat of fusion of ice in aqueous solutions* mainitu suhteline erinevus minu arvutatust on `r signif(r, digits = 5)`%. Sain ka Ristost erineva tulemuse, mis tuleneb sellest, et mõõtsime erinevate termomeetritega ja arvestasime temperatuurinäite erinevalt. mulle on arusaamatu, miks me ei arvutanud jää soojendamissoojust.
+
