@@ -1,6 +1,7 @@
 ---
-title: "Kalorimeetrilised mõõtmised"
-author: 'peacecop kalmer:, Risto Koor'
+title: "Integreeritud loodusteadused Tallinna Ülikoolis"
+author: 'peacecop kalmer:'
+institution: "Tallinna Ülikool"
 number: 3
 #date: "`r Sys.Date()`"
 date-work: "20220324"
@@ -9,7 +10,7 @@ group: "MLLBk-1"
 site: bookdown::bookdown_site
 documentclass: article
 download: ["pdf"]
-bibliography: sample.bib
+bibliography: references.bib
 description: |
   This is a minimal example of using the bookdown package to write a book.
   set in the _output.yml file.

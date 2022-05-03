@@ -1,0 +1,18 @@
+# Sissejuhatus {-}
+
+Tallinna Ülikooli kursuse *digipädevus ja akadeemilised väljendusoskused* üks osa on lühireferaadi loomine looja õppekava instituudi akadeemilise õppesuuna kohta. Minu õppekava on *Integreeritud loodusteadused, BSc*[@akadeemilised-suunad] ja sellega näidatakse Loodus- ja terviseteaduste instituudi *loodusteaduste ja jätkusuutliku arengu* suunda[@int-loo].
+
+Integreeritud loodusteaduste õppekavas oleva üldbioloogia kursuse õpetaja tundub olevat oma valdkonnas spetsialist. Õpetajarollis võib ta rääkida tundidekaupa, ilma et kuulaja tema jutu sisust aru saaks, sest seda sisu pole nt mitte millelegi laduda. Kui tema kuulamise asemel lugeda teost *EARTHDANCE:
+Living Systems in Evolution* [@maailma-tants], saab lihtsalt ja kiiresti ülevaate, mida on, kuhu laduda.
+
+2. Jätkusuutlikkust on oluline käsitleda kõikides õppekavades [@ai-ecosystem-creation].
+
+3. Kuna jätkusuutlik energeetika ja tehisintellekt on ajakohased valdkonnad, siis on tähtsal kohal inimeste tehniline väljaõpetamine nendes valdkondades [@SKOWRONEK2022100124].
+
+4. Jätkusuutlikkuse üks alus on terve vaimne tervis [@vaimse-tervise-roheline-raamat].
+
+5.  Tallinna Ülikooli kursuse *digipädevus ja akadeemilised väljendusoskused* üks osa on lühireferaadi loomine looja õppekava instituudi akadeemilise õppesuuna kohta. Minu õppekava on *Integreeritud loodusteadused, BSc* [@akadeemilised-suunad] ja sellega näidatakse Loodus- ja terviseteaduste instituudi *loodusteaduste ja jätkusuutliku arengu* suunda [@int-loo].
+
+    Jätkusuutlikkuse osa põhineb inimarengu 2020. aasta aruandel [@hdr-2020].
+    
+    Inimeste oodatav eluiga on veidi suurenenud ja püsib praegu paigal või näitab kerget langemist [@oodatav-eluiga]. See on vähemalt 74 aastat ja see tähendab vähemalt 74-aastast elukestvat õppimist.
