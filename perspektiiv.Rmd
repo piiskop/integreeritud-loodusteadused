@@ -1,1 +1,12 @@
 # Integreeritud loodusteaduste õppe perspektiiv
+
+The International Standard Classification of Education (ISCED) on raamistik ülemaailmse haridusstatistika tegemiseks [@a2014_isced]. Selle raamistiku haridusvaldkondade klassfikatsioon on ISCED Fields of Education and
+Training (ISCED-F), milles jaotatakse haridusvaldkonnad kümneks: üldprogrammid ja kvalifikatsioonid, haridus, kunstid ja humanitaaria, sotsiaalteadused, ajakirjandus ja teave, ärindus, haldus ja õigus, loodusteadused, matemaatika ja statistika, informatsiooni- ja kommunikatsioonitehnoloogiad, tehnika, tootmine ja ehitus, põllumajandus, metsandus, kalandus ja veterinaaria, tervis ja heaolu ning teenindus. Nendest loodusteadused, matemaatika ja statistika jaotatakse bioloogiaks ja sellega seotud teadusteks, keskkonnaks, füüsikalisteks teadusteks ning matemaatikaks ja statistikaks, millest keskkond jaguneb omakorda keskkonnateadusteks ning looduskeskkonnaks ja eluslooduseks. Eesti Hariduse Infosüsteemi õppekavade registri väljavõttes [@ehis] on veel liigitatud 27 väidetavalt ISCED-F'i õppekava grupi järgi, mille kohta ma mujalt teavet ei leidnud.
+
+Integreeritud loodusteaduste õppekava on märgitud loodusteaduste, matemaatika ja statistika õppevaldkonna ehk õppekava grupi keskkonna õppesuuna keskkonnateaduste õppekavade rühma ehk õpperühma [@ehis; @tl]. Tallinna Ülikoolis on veel üks keskkonnateaduste õppekava - geoökoloogia [@ehis], kuid kui süübida, siis selgub, et selle õppekava järgi on õppimine keelatud [@ehiseduee], nii et õppida tohib Tallinna Ülikoolis ainult integreeritud loodusteadusi keskkonnateaduste seas.
+
+Haridusvaldkondadest annab ülevaate joonis \@ref(fig:educational-branches).
+
+```{r educational-branches, fig.cap = "Haridusvaldkonnad: teekond minu integreeritud loodusteaduste õppekavani on märgitud lilla taustaga.", echo = FALSE, out.width = "24cm", out.height = "7cm", out.extra = "angle = 65"}
+include_svg("haridusvaldkonnad.svg")
+```

@@ -150,6 +150,7 @@
 \makeatother
 \usepackage{hyphenat}
 \usepackage{fvextra}
+
 \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
 \usepackage[nobottomtitles]{titlesec}
 
@@ -160,7 +161,16 @@
 \pgfplotsset{compat=newest}
 \usepackage{pgfplots}
 \usepackage{mathrsfs}
+\usepackage{metalogo}
 \usetikzlibrary{arrows}
+\usetikzlibrary{mindmap, backgrounds}
+\tikzset{grow cyclic absolute/.style={%
+		growth function=\tikzgrowcyclicabsolute}}
+\def\tikzgrowcyclicabsolute{%
+	\pgftransformshift{%
+		\pgfpointpolar{\pgfkeysvalueof{/tikz/sibling angle}}%
+		{\the\tikzleveldistance}}}
+
 \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 \definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
 \definecolor{zzttqq}{rgb}{0.6,0.2,0}
