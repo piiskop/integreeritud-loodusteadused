@@ -1,1 +1,1 @@
-Tallinna Ülikooli mehaanika praktikumi peacecop kalmeri: ja Risto Koori raport jõudude liitmise kohta.
+Tallinna Ülikooli digipädevuste ja akadeemiliste õpioskuste lühireferaat õpitava eriala perspektiivi kohta

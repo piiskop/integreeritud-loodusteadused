@@ -19,7 +19,7 @@ bookdown::word_document2:
   always_allow_html: true
   template: template.tex
   toc: yes
-  reference_docx: integreeritud-loodusteadused.docx
+  reference_docx: docs/integreeritud-loodusteadused.docx
 pdf_document:
   template: template.tex
   includes: title-page.tex

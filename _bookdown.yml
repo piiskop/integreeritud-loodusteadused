@@ -1,5 +1,4 @@
 book_filename: "integreeritud-loodusteadused"
 new_session: false
-before_chapter_script: _common.R
 delete_merged_file: true
-rmd_files: ["index.Rmd", "sissejuhatus.Rmd", "akadeemiline-suund.Rmd", "perspektiiv.Rmd", "kokkuvõte.Rmd", "99-references.Rmd"]
+rmd_files: ["index.Rmd", "sissejuhatus.Rmd", "akadeemiline-suund/akadeemiline-suund.Rmd", "perspektiiv/perspektiiv.Rmd", "kokkuvõte.Rmd", "99-references.Rmd"]
