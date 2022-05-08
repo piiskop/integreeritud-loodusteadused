@@ -11,7 +11,7 @@ If you'd like to change the name of the bibliography to something else,
 delete "References" and replace it.
 -->
 ```
-# Välisallikad {.unnumbered}
+# Kasutatud allikad {.unnumbered}
 
 ```{=html}
 <!--

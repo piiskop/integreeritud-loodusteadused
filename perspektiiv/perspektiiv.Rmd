@@ -146,7 +146,14 @@ Kõigile õpetajatele eeskujuks võib sättida füüsikalise maailma pildi õpet
 
 Maateaduse alustes räägivad eri teemadel eri õpetajad ning lahendada tuleb ka praktilisi ülesandeid. Maateaduse teemade õppimises tundsin kõige enam puudust simulatsioonivahenditest. 2017. a koostati finantseerimistaotlus selliste vahendite soetamiseks, mida ei rahuldatud [@geoteaduste].
 
-Kuna igas loodusteaduses kasutatakse matemaatilisi mudeleid, siis pakutakse esimeseks semestriks kaks matemaatikakursust: matemaatilised meetodid loodusteadustes ja üldmõõtmised loodusteadustes. Nendest kahest kursusest esimeses korratakse mõningaid teemasid keskkoolist ja paar teemat on ka uued. Valik on koostatud selliseks eeldades, et just neid teemasid läheb kõige enam loodusteadustes vaja. Üldmõõtmiste kursus tähendab statistikakursust, milles kasutatakse kontoritarkvara, et teha statistilisi analüüse. Alates teisest semestrist saab õppida andmeanalüüsi, mille jaoks kasutatakse statistikaprogrammi *SPSS* [@spss], põgusalt tutvustatakse R'i [@r] ja praktikumides saab katsetada eri mõõteseadmetega. Vastavalt OSKA raportile on programmeerimise valdkond kiireima kasvuga [@Kutsekoda, p. 17]. Statistikakäsitlus on vähemalt üldmõõtmiste ja andmeanalüüsi kursuses liiga põgus ning ei tekita mõnusat arusaamise tunnet.
+Kuna igas loodusteaduses kasutatakse matemaatilisi mudeleid, siis pakutakse esimeseks semestriks kaks matemaatikakursust: matemaatilised meetodid loodusteadustes ja üldmõõtmised loodusteadustes. Nendest kahest kursusest esimeses korratakse mõningaid teemasid keskkoolist ja paar teemat on ka uued. Valik on koostatud selliseks eeldades, et just neid teemasid läheb kõige enam loodusteadustes vaja. Üldmõõtmiste kursus tähendab statistikakursust, milles kasutatakse kontoritarkvara, et teha statistilisi analüüse. Alates teisest semestrist saab õppida andmeanalüüsi, mille jaoks kasutatakse statistikaprogrammi *SPSS* [@spss], põgusalt tutvustatakse R'i [@r] ja praktikumides saab katsetada eri mõõteseadmetega (joonis \@ref(fig:mechanics)). Vastavalt OSKA raportile on programmeerimise valdkond kiireima kasvuga [@Kutsekoda, p. 17]. Statistikakäsitlus on vähemalt üldmõõtmiste ja andmeanalüüsi kursuses liiga põgus ning ei tekita mõnusat arusaamise tunnet.
+
+(ref:tl-citation) @tl 
+
+```{r mechanics, fig.cap="Güroskoobi tööpõhimõtte uurimine mehaanika laboris füüsikaõpetamiseks vajaliku varustusega ruumis $A-403$ ajahetkel 20220506133237. Integreeritud loodusteaduste õpilane Birgit Avistu uurib güroskoobi liikumist selle mõjutamisel käega. Integreeritud loodusteaduste õppekava kuraator ja mehaanikapraktikumide juhendaja Katrin Laas suurendab samal ajal güroskoobi ratta pöördeid ((ref:tl-citation)). Punapäine pedagoogikatudeng Edith Merila tegutseb taamal teise seadmega. mina jäädvustasin.", out.width="\\textwidth", fig.align="center", echo=FALSE}
+librarian::shelf(knitr)
+include_graphics(path = "perspektiiv/cap_VID_20220506_133237_00:00:24_01.jpg")
+```
 
 Kuna eri kursuste õpetamises puudub ühtne stiil ja süsteem ning teemade käsitlemine ei ole omavahel seostatud, siis võiks õppekava nimetus olla pigem *desintegreeritud loodusteadused*.
 
@@ -155,6 +162,8 @@ Enne esimese semestri algust testitakse tudengi inglise keele oskus ja vastavalt
 Sooritada tuleb ka erialapraktika ja bakalaureusetöö. Viimase ettevalmistamiseks on Tallinna Ülikoolis nii nimetatud kaks baaskursust akadeemiliseks õppimiseks kui vastav seminar. Sellist tuge minu esimese bakalaureusetöö tegemiseks ei olnud ja selline uuendus on väga abiks.
 
 Integreeritud loodusteaduste õppekava läbinud tudengid saavad Gaia hariduse sertifikaadi [@tallinna].
+
+Õppekava keel on eesti.
 
 ## Muutused õppijate arvus
 
@@ -229,7 +238,11 @@ Integreeritud loodusteaduste õppe läbinud inimene omab väljavaateid mitmes ro
 
 Vastavalt 2021. a OSKA tööjõu vajaduse prognoosile on geotehnikainseneride järele nõudlus väike, kuid nende olemasolu hädavajalik [@Kutsekoda]. Eriti suur puudus olevat teede- ning veetehnika ja hoone tehnosüsteemide inseneridest. Geodeetide puhul tuntakse pigem puudujääki.
 
-Puudu on teemaõpetajatest, kuna liiga paljud senised teemaõpetajad on oma rollist lahkumas keha vanuse tõttu. Puudu on ka kutseõpetajatest, kelle roll täiskasvanute koolitajana kasvab.
+Puudu on teemaõpetajatest, kuna liiga paljud senised teemaõpetajad on oma rollist lahkumas keha vanuse tõttu. Puudu on ka kutseõpetajatest, kelle roll täiskasvanute koolitajana kasvab. "Kriitiline on loodusainete ja
+matemaatikaõpetajate asendusvajadus: praegustest matemaatika-, keemia-, geograafia- ja
+bioloogiaõpetajatest on iga viies vähemalt 60-aastane ning füüsikaõpetajatest juba iga neljas." [@Kutsekoda, p. 70] "Üldhariduskooli vanema astme õpetajaks saab õppida TLÜ-s ja TÜ-s bakalaureuseõpingute järel
+magistriõppe õppekavade alusel, näiteks TLÜ-s [---] „Gümnaasiumi loodusteaduslike ainete
+õpetaja“ [@a2018_gmnaasiumi] [---] alusel." [@tjuvajaduse, p. 25]
 
 Keemiainsenere on pigem juurde vaja. Et katta keemiainseneride tööjõu vajadus, peaksid kõik bakalaureuseõppe lõpetajad edasi minema magistriõppesse. Keemiaprotsesside operaatoreid on vaja eelkõige Ida-Virumaasse. Puudu on automaatikuid ja mehhatroonikuid.
 

@@ -4,7 +4,7 @@
 
 # Loodusteadused ja jätkusuutlik areng
 
-## Integreeritud loodusteadused Tallinna Ülikooli struktuuris
+## Koht haridussüsteemis
 
 Eesti haridussüsteem koosneb üld-, huvi- ja kutseharidusest ning haridustasemeid on neli: alus-, põhi-, kesk- ja kõrgharidus, millest viimane on hariduse kolmas tase [@eesti]. Kõrgharidust saab omandada rakenduskõrgkoolides ja ülikoolides. Eestis on seitse ülikooli, millest kuus on avalik-õiguslikud ja üks erakõrgkool [@ehis]. Kõrghariduse tasemeid on kolm: bakalaureuse- ja rakenduskõrghariduse, magistri- ja doktoriõpe [@krgharidusseadusriigi], millest esineb ka bakalaureuse- ja magistritaseme kombineeritud vorm. Bakalaureuseõpe kestab kolm kuni neli aastat ning sisaldab haridusvõimsust 180 kuni 240 punkti ulatuses. mina õpin avalik-õiguslikus Tallinna Ülikoolis bakalaureuseõppes. Joonisel \@ref(fig:estonian-education-system) on esitatud Eesti haridussüsteemi skeem.
 

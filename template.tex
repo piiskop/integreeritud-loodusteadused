@@ -82,7 +82,16 @@ $if(csl-refs)$
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 $endif$
 \onehalfspacing
-\begin{document}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=30mm,
+ top=20mm,
+ right=20mm,
+ bottom=20mm
+ }
+ \begin{document}
 \input{title-page.tex}
 \setlength{\parskip}{12pt}
 \renewcommand{\arraystretch}{1}
