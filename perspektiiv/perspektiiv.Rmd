@@ -5,7 +5,7 @@
 The International Standard Classification of Education (ISCED) on raamistik ülemaailmse haridusstatistika tegemiseks [@a2014_isced]. Selle raamistiku haridusvaldkondade klassifikatsioon on ISCED Fields of Education and
 Training (ISCED-F), milles jaotatakse haridusvaldkonnad kümneks: üldprogrammid ja kvalifikatsioonid, haridus, kunstid ja humanitaaria, sotsiaalteadused, ajakirjandus ja teave, ärindus, haldus ja õigus, loodusteadused, matemaatika ja statistika, informatsiooni- ja kommunikatsioonitehnoloogiad, tehnika, tootmine ja ehitus, põllumajandus, metsandus, kalandus ja veterinaaria, tervis ja heaolu ning teenindus. Nendest loodusteadused, matemaatika ja statistika jaotatakse bioloogiaks ja sellega seotud teadusteks, keskkonnaks, füüsikalisteks teadusteks ning matemaatikaks ja statistikaks, millest keskkond jaguneb omakorda keskkonnateadusteks ning looduskeskkonnaks ja eluslooduseks. Eesti Hariduse Infosüsteemi õppekavade registri väljavõttes [@ehis] on veel liigitatud 27 väidetavalt ISCED-F'i õppekava grupi järgi, mille kohta ma mujalt teavet ei leidnud.
 
-minu integreeritud loodusteaduste õppekava on märgitud loodusteaduste, matemaatika ja statistika õppevaldkonna ehk õppekava grupi keskkonna õppesuuna keskkonnateaduste õppekavade rühma ehk õpperühma [@ehis; @tl]. Tallinna Ülikoolis on veel üks keskkonnateaduste õppekava - geoökoloogia [@ehis], kuid kui süübida, siis selgub, et selle õppekava järgi on õppimine keelatud [@ehiseduee], nii et õppida tohib Tallinna Ülikoolis ainult integreeritud loodusteadusi keskkonnateaduste seas.
+minu integreeritud loodusteaduste õppekava on märgitud loodusteaduste, matemaatika ja statistika õppevaldkonna ehk õppekava grupi keskkonna õppesuuna keskkonnateaduste õppekavade rühma ehk õpperühma [@ehis; @tl]. Tallinna Ülikoolis on veel üks keskkonnateaduste õppekava - geoökoloogia [@ehis], mille õppekava järgi on õppimine keelatud [@ehiseduee], nii et õppida tohib Tallinna Ülikoolis ainult integreeritud loodusteadusi keskkonnateaduste seas.
 
 Haridusvaldkondadest annab ülevaate joonis \@ref(fig:educational-branches).
 
@@ -115,6 +115,8 @@ W_H_IN_LEARNING_D <- DELTA_LEARNING_H / ((D_IN_A - BREAK_D_IN_A) * W_D_IN_WEEK /
 
 Seega on majanduslikult teoreetiliselt võimalik integreeritud loodusteaduste eriala täiskoormusega õppida, ilma selleks eelnevalt finantsvaru omamata. Praktiline teostamine eeldab oskust ja võimekust õppetegevuse kõrvalt tasulisi teenuseid osutada arvestades selleks ajalisi piiranguid.
 
+Tallinna Ülikoolis pakutakse ka tulemusstipendiumi sada eurot kuus, mille tõttu eksisteerib kaks kaalutud keskhinnet: üks stipendiumitaotlemise jaoks ja teine kõige muu jaoks [@study-rules, p. 17]. Selleks, et saada tulemusstipendiumi, on vajalik lisaks kõrgele keskhindele korraldada oma tulemuste hindamine selliseks, et ei märgitaks õppeinfo süsteemi põhieksami tulemust, kui see on liiga nigel, või ei sooritataks põhieksamit üldse, kui valmis ollakse alles järeleksamiks.
+
 Eelnevalt lasin välja arvutada, et õppetegevusest jääb semestrite kestusse üle $\nolinebreak{`r round(DELTA_LEARNING_H)` \times \mathrm{h}}$, mida saab kasutada ka ülekoormusega õppimiseks. Sellises juhus on võimalik aastas juurde õppida
 
 ```{r additional-eap}
@@ -137,12 +139,12 @@ Looduse seadused on kursus iga loodusteaduse seaduste tutvustamiseks, enne kui n
 
 Ülekooliliseks lõimimiseks on kursus Erialasid Lõimiv Uuendus, milles vähemalt kolme eriala tudengid viivad kuueses grupis ellu ühisprojekti. Selle kursuse sisu loovad seega tudengid ise ja selle kasulikkus sõltub sellest, kui hästi projekt teostatakse.
 
-Neli loodusteaduste baaskursust on üldbioloogia, füüsikaline maailma pilt, üldkeemia ja maateaduse alused. Üldbioloogia sellisel kujul, nagu seda Tõnu Ploompuu praegu õpetab, ei ole kasulik, kuna ta on ainus enda kursuse põhiõpetaja, kes küsib tudengitelt tagasisidet alles kursuse lõpus ning vahepeal ei saa tudeng ennast kontrollida, kus ta järjega on. Tõnu räägib nii aeglaselt, et enne, kui ta lause lõpetada jõuab, läheb mõte rändama mujale. Ühtlasi ei arvesta ta tudengite taustaga, mistõttu nt minul ei olnud tema räägitust väga võimalik aru saada, sest puudusid vajalikud alusoskused, mille ma sain, kui peale kursust ja enne eksamit eraldi õpikut lugesin, milles on värvilised pildid ja simulatsioonid võrdlemisi Tõnu kahevärvilise tekstilise mõistete loendiga. Kui tema kuulamise asemel lugeda teost *EARTHDANCE:
+Neli loodusteaduste baaskursust on üldbioloogia, füüsikaline maailma pilt, üldkeemia ja maateaduse alused. Üldbioloogia sellisel kujul, nagu seda Tõnu Ploompuu praegu õpetab, ei ole kasulik, kuna see on ainus baaskursus, milles küsitakse tudengitelt tagasisidet alles kursuse lõpus ning vahepeal ei saa tudeng ennast kontrollida, kus ta järjega on. Tõnu räägib nii aeglaselt, et enne, kui ta lause lõpetada jõuab, läheb mõte rändama mujale. Ühtlasi ei arvesta ta tudengite taustaga, mistõttu nt minul ei olnud tema räägitust väga võimalik aru saada, sest puudusid vajalikud alusoskused, mille ma sain, kui peale kursust ja enne eksamit eraldi õpikut lugesin, milles on värvilised pildid ja simulatsioonid võrdlemisi Tõnu kahevärvilise tekstilise mõistete loendiga. Kui tema kuulamise asemel lugeda teost *EARTHDANCE:
 Living Systems in Evolution* [@maailma-tants], saab lihtsalt ja kiiresti ülevaate, mida on, kuhu laduda.
 
 Kõigile õpetajatele eeskujuks võib sättida füüsikalise maailma pildi õpetaja Ako Sauga, kes õpetab süsteemselt, kompaktselt ja värvikalt. Tal on iga nädala kohta eraldi teema ja iga teema kohta enesekontrolli test, mis aitab tudengil järge pidada. Kursus lõpeb automaatkontrolliga eksamiga, mille teooriaküsimused on valitud eelnevate iganädalaste enesekontrolli testide küsimuste seast.
 
-Üldkeemia koosneb teooriaosast ja kirjalikust ülesannete lahendamisest. Kui Kalle Truus loeb justkui entsüklopeediat ette, siis Kert Martma oskab ilmekalt selgitada. Korraldus selles kursuses on siiski segane, mis tuleneb ilmselt sellest, et õpetajatel on palju tegemist ja ei jõuta korralikult omavahel kokku leppida ja ette valmistada.
+Üldkeemia koosneb teooriaosast ja kirjalikust ülesannete lahendamisest. Kui Kalle Truus loeb justkui entsüklopeediat ette, siis Kert Martma oskab ilmekalt selgitada. Korraldus selles kursuses on siiski segane, mis tuleneb ilmselt sellest, et õpetajatel on palju tegemist ning ei jõuta korralikult omavahel kokku leppida ja ette valmistada.
 
 Maateaduse alustes räägivad eri teemadel eri õpetajad ning lahendada tuleb ka praktilisi ülesandeid. Maateaduse teemade õppimises tundsin kõige enam puudust simulatsioonivahenditest. 2017. a koostati finantseerimistaotlus selliste vahendite soetamiseks, mida ei rahuldatud [@geoteaduste].
 
@@ -159,7 +161,7 @@ Kuna eri kursuste õpetamises puudub ühtne stiil ja süsteem ning teemade käsi
 
 Enne esimese semestri algust testitakse tudengi inglise keele oskus ja vastavalt selle testi tulemusele on tal vaja läbida kas kaks keelekursust või üks keelekursus.
 
-Sooritada tuleb ka erialapraktika ja bakalaureusetöö. Viimase ettevalmistamiseks on Tallinna Ülikoolis nii nimetatud kaks baaskursust akadeemiliseks õppimiseks kui vastav seminar. Sellist tuge minu esimese bakalaureusetöö tegemiseks ei olnud ja selline uuendus on väga abiks.
+Sooritada tuleb ka erialapraktika ja bakalaureusetöö. Viimase ettevalmistamiseks on ka vastav seminar. Sellist tuge minu esimese bakalaureusetöö tegemiseks ei olnud ja selline uuendus on väga abiks.
 
 Integreeritud loodusteaduste õppekava läbinud tudengid saavad Gaia hariduse sertifikaadi [@tallinna].
 
@@ -169,13 +171,13 @@ Integreeritud loodusteaduste õppekava läbinud tudengid saavad Gaia hariduse se
 
 "Inimarengu indeks on saavutuste kokkuvõtlik näitaja kolmes inimarengu võtmemõõtmes: pikk ja terve elu, juurdepääs teadmistele ja korralik elatustase." [@a2020_calculating] Eesti asub inimarengu indeksi järgi 29. positsioonil maailmas [@hdr-2020, pp. 356]. Inimeste oodatav eluiga on veidi suurenenud ja püsib praegu paigal või näitab kerget langemist[@oodatav-eluiga]. See on vähemalt 74 aastat ja see tähendab vähemalt 74-aastast elukestvat õppimist. 2019. a ennustati oodatud kooliõppimise kestuseks ühe inimese kohta 15 kuni 17 aastat [@hdr-2020, p. 356]. See tähendab, et eeldatakse vähemalt bakalaureusekraadi saavutamist. Eestis on 44611 üliõpilast, kellest 30572 õpivad kõrghariduse esimesel tasemel, kellest omakorda 15786 üliõpilast õpivad bakalaureuseõppes [@haridusandmete]. Viimastest 3705 üliõpilast õpivad Tallinna Ülikoolis, kellest 1649 õpivad loodusteaduste, matemaatika ja statistika valdkonnas. 
 
-Integreeritud loodusteaduste tudengite arv Tallinna Ülikoolis on viimased neli aastat näidanud tõusutrendi olles 2021./2022. õppeaastas 66. Nendest neli maksavad oma õppimise eest ise. Kõik 66 on kohalikud tudengid. Samal ajal õpib terves loodusteaduste, matemaatika ja statistika valdkonnas Tallinna Ülikoolis 252 tudengit. Teistes loodusteaduste, matemaatika ja statistika valdkonna õppeprogrammides õpib sama suurusjärk tudengeid, kõige rohkem - 71 - keskkonnakorralduses, kõige vähem - 57 - bioloogias.
+Integreeritud loodusteaduste tudengite arv Tallinna Ülikoolis on viimased neli aastat näidanud tõusutrendi olles õppeaastas *2021/2022* 66. Nendest neli maksavad oma õppimise eest ise. Kõik 66 on kohalikud tudengid. Terves loodusteaduste, matemaatika ja statistika valdkonnas õpib Tallinna Ülikoolis 252 tudengit. Teistes loodusteaduste, matemaatika ja statistika valdkonna õppeprogrammides õpib sama suurusjärk tudengeid, kõige rohkem - 71 - keskkonnakorralduses, kõige vähem - 57 - bioloogias.
 
-Enamus tudengeid, kes on asunud integreeritud loodusteadusi õppida, on siin maailmas elanud kuni $19 \times \mathrm{a}$, välja arvatud 2016. a, kui kõige enam tudengeid olid vanuserühmas 20 kuni 24 aastat. Alates 2019. a on õppekava järgima asunud ka inimesi, kelle keha vanus on 35 või enam aastat, millest paistab, et õppekava on atraktiivne sõltumata vanusest.
+Enamus tudengeid, kes on asunud integreeritud loodusteadusi õppima, on siin maailmas elanud kuni $19 \times \mathrm{a}$, välja arvatud 2016. a, kui kõige enam tudengeid olid vanuserühmas 20 kuni 24 aastat. Alates 2019. a on õppekava järgima asunud ka inimesi, kelle keha vanus on 35 või enam aastat, millest paistab, et õppekava on atraktiivne sõltumata vanusest.
 
 Ainult 2018. a võeti integreeritud loodusteaduste õppesse rohkem mees- kui naisinimesi ja 2021. aastal esmakordselt ühepalju.
 
-Esimene tudeng, kes integreeritud loodusteaduste bakalaureusekraadi sai, lõpetas 2017. a. Järgmised kuus lõpetasid aasta hiljem. 2019. a lõpetas kaks tudengit, 2020. a kuus tudengit ja 2021. a kümme tudengit. Kokku loodusteaduste, matemaatika ja statistika valdkonnas lõpetas 2021. aastas 31 tudengit. Kõige enam lõpetanuid oli humanitaarteaduste valdkonnas - 184. Kuigi näeme viimase kolme aasta lõikes tõusutrendi, on lõpetanute arv võrdlemisi väike. Põhjuseid võib olla mitu: võidi vahetada eriala, üldse lahkuda või jääda kauemaks õppima. Tabelist \@ref(tab:number-of-students) näeme, et kõige enam väljalangemisi toimus õppeaastas 2017/2018.
+Esimene tudeng, kes integreeritud loodusteaduste bakalaureusekraadi sai, lõpetas 2017. a. Järgmised kuus lõpetasid aasta hiljem. 2019. a lõpetas kaks tudengit, 2020. a kuus tudengit ja 2021. a kümme tudengit. Kokku loodusteaduste, matemaatika ja statistika valdkonnas lõpetas 2021. aastas 31 tudengit. Kõige enam lõpetanuid oli humanitaarteaduste valdkonnas - 184. Kuigi näeme viimase kolme aasta lõikes tõusutrendi, on lõpetanute arv võrdlemisi väike. Põhjuseid võib olla mitu: võidi vahetada eriala, üldse lahkuda või jääda kauemaks õppima. Tabelist \@ref(tab:number-of-students) näeme, et kõige enam väljalangemisi toimus õppeaastas *2017/2018*.
 
 (ref:haridusandmete-citation) @haridusandmete 
 
@@ -236,7 +238,7 @@ Kuni siiski veel õppivaid tudengeid jagub, on õppekaval perspektiivi.
 
 Integreeritud loodusteaduste õppe läbinud inimene omab väljavaateid mitmes rollis teenuseid osutama asuda. ta võib jätkata magistratuuris, hakata ise õpetama, inseneriks või laborandiks.
 
-Vastavalt 2021. a OSKA tööjõu vajaduse prognoosile on geotehnikainseneride järele nõudlus väike, kuid nende olemasolu hädavajalik [@Kutsekoda]. Eriti suur puudus olevat teede- ning veetehnika ja hoone tehnosüsteemide inseneridest. Geodeetide puhul tuntakse pigem puudujääki.
+OSKA on *OSKuste Arendamise koordinatsioonisüsteem* [@metsandus_tulevikuvaade]. Vastavalt 2021. a OSKA tööjõu vajaduse prognoosile on geotehnikainseneride järele nõudlus väike, kuid nende olemasolu hädavajalik [@Kutsekoda]. Eriti suur puudus olevat teede- ning veetehnika ja hoone tehnosüsteemide inseneridest. Geodeetide puhul tuntakse pigem puudujääki.
 
 Puudu on teemaõpetajatest, kuna liiga paljud senised teemaõpetajad on oma rollist lahkumas keha vanuse tõttu. Puudu on ka kutseõpetajatest, kelle roll täiskasvanute koolitajana kasvab. "Kriitiline on loodusainete ja
 matemaatikaõpetajate asendusvajadus: praegustest matemaatika-, keemia-, geograafia- ja

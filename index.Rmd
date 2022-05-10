@@ -16,7 +16,6 @@ description: |
   set in the _output.yml file.
   The HTML output format for this example is bookdown::bs4_book,
 biblio-style: newapa
-geometry: left=3cm, right=2cm, top=2cm, bottom=2cm
 fontsize: 12pt
 mainfont: Latin Modern Roman
 sansfont: Arial

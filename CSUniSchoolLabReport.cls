@@ -72,9 +72,16 @@
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 \usepackage{float}
-\usepackage{apacite}
-\bibliographystyle{apacite}
+\usepackage{polyglossia} % must be loaded before biblatex
+\usepackage[autostyle=true]{csquotes}
+\usepackage{IEEEtrantools}
+\setdefaultlanguage{estonian} % The languages also must be defined before biblatex
+\setotherlanguage{english}
+%\usepackage{apacite}
+%\bibliographystyle{apacite}
 %\usepackage{biblatex}
+\usepackage[backend=biber,style=apa]{biblatex}
+%\addbibresource{references.bib} %Imports bibliography file
 \usepackage{verbatim}
 \usepackage{color}
 \usepackage{fancyvrb}
@@ -119,7 +126,7 @@
 \usepackage{blindtext}
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
-\usepackage[estonian]{babel}
+%\usepackage[estonian]{babel}
 \usepackage{titling}
 \usepackage{setspace}
 \renewcommand{\topfraction}{.85}

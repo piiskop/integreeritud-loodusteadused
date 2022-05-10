@@ -13,6 +13,7 @@ delete "References" and replace it.
 ```
 # Kasutatud allikad {.unnumbered}
 
+\hyphenpenalty=10000
 ```{=html}
 <!--
 This manually sets the header for this unnumbered chapter.
@@ -28,3 +29,6 @@ To remove the indentation of the first entry.
 \noindent
 
 \setlength{\parindent}{-0.20in}
+\begin{comment}
+\printbibliography
+\end{comment}

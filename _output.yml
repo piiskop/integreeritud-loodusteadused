@@ -4,27 +4,32 @@ bookdown::bs4_book:
     primary: "#096B72"
   repo: https://github.com/piiskop/integreeritud-loodusteadused
 bookdown::pdf_book:
-  latex_engine: xelatex
-  #citation_package: natbib
   keep_tex: yes
-  template: template.tex
-#  includes: title-page.tex
-  extra_dependencies: ["float", "flafter"]
-  fig_caption: yes
+  latex_engine: xelatex
+  #citation_package: biblatex
+  #biblio-style: "apa"
+  #csl: apa.csl
+  #biblatexoptions: [backend=biber, style=apa]
+  #bibliography: "references.bib"
+  #keep_tex: yes
+  #template: template.tex
+  #extra_dependencies: ["float", "flafter"]
+  #fig_caption: yes
   pandoc_args: [
-      "-r", "markdown-auto_identifiers", "--top-level-division=chapter"
+  #    "-r", "markdown-auto_identifiers", "--top-level-division=chapter"
+      "--top-level-division=chapter"
       ]
+  template: template.tex
 bookdown::epub_book: default
 bookdown::word_document2:
-  always_allow_html: true
-  template: template.tex
-  toc: yes
-  reference_docx: docs/integreeritud-loodusteadused.docx
+  #always_allow_html: true
+  #toc: yes
+  reference_docx: integreeritud-loodusteadused.docx
 pdf_document:
-  template: template.tex
-  includes: title-page.tex
+  #template: template.tex
   pandoc_args: [
       "-r", "markdown-auto_identifiers", "--top-level-division=chapter"
       ]
   number_sections: false
   extra_dependencies: ["float"]
+#officedown::rdocx_document
