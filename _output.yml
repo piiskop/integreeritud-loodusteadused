@@ -3,6 +3,8 @@ bookdown::bs4_book:
   theme:
     primary: "#096B72"
   repo: https://github.com/piiskop/integreeritud-loodusteadused
+  latex_engine: xelatex
+  template: template.tex
 bookdown::pdf_book:
   keep_tex: yes
   latex_engine: xelatex
